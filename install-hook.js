@@ -10,7 +10,7 @@ const hookPath = path.join(
 );
 
 const hook = `#!/bin/sh
-printf env > /tmp/arachne-hook-result
+env > /tmp/arachne-hook-result
 `;
 
 fs.mkdirSync(path.dirname(hookPath), {
